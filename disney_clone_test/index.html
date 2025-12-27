@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Layout Sederhana</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- CSS Manual -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Judul -->
+    <h1 class="title">
+      Contoh HTML + CSS + Tailwind
+    </h1>
+
+    <!-- Komentar teks -->
+    <p class="description">
+      Ini contoh file yang dipisah antara HTML dan CSS.
+    </p>
+
+    <nav class="navbar">
+      <div class="navbar-container">
+
+        <div class="logo">MyApp</div>
+
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Detail</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Layout Blok -->
+    <div class="flex gap-4">
+
+      <!-- Blok kiri -->
+      <div class="card">
+        <h2 class="card-title">Blok Kiri</h2>
+        <p class="card-text">Isi konten kiri</p>
+
+        <!-- Button Tailwind -->
+        <button class="btn-primary">
+          Klik Saya
+        </button>
+      </div>
+
+      <!-- Blok kanan -->
+      <div class="card">
+        <h2 class="card-title">Blok Kanan</h2>
+        <p class="card-text">Isi konten kanan</p>
+
+        <!-- Button Tailwind outline -->
+        <button class="btn-outline">
+          Detail
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

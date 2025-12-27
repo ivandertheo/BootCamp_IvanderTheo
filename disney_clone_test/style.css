@@ -1,0 +1,102 @@
+/* Global container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 24px;
+}
+
+/* Judul */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Deskripsi */
+.description {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  width: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Card text */
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+/* Button (gabungan Tailwind style manual) */
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-outline {
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.btn-outline:hover {
+  background-color: #eff6ff;
+}
+
+.navbar {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 24px;
+  height: 64px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #2563eb;
+}
