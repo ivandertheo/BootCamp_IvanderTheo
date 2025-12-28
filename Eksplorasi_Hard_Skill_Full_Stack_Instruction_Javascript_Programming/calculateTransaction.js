@@ -18,10 +18,16 @@
 function totalSaldo(transactions) { // kofigurasi parameter sesuai kebutuhan anda
   // masukan logika disini
   let saldo = 0;
+  let debit = 0;
+  let kredit = 0;
   transactions.forEach(element => {
-    saldo += element.jumlah
+    if(element.jenis === "debit") {
+      debit += element.jumlah;
+    } else if (element.jenis === "kredit") {
+      kredit += element.jumlah;
+    }
   })
-  return  saldo// kembalikan hasil logika disini
+  return  kredit-debit;// kembalikan hasil logika disini
 }
 
 function transaksiTerbanyak(transactions) { // kofigurasi parameter sesuai kebutuhan anda
